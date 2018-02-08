@@ -1,0 +1,358 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:300);
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2C2D3D;
+}
+
+.card {
+    height: 450px;
+  width: 400px;
+  margin: 10px auto;
+  background-color: #F7F7E9;
+  color: #444;
+  overflow: hidden;
+  box-shadow: 5px 5px 0 0 #aaa;
+}
+.card h1 {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  font-family: Roboto Slab;
+  font-weight: 400;
+  background-color: #4DD65F;
+  animation: fadein 1.2s;
+}
+.card img {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  position: relative;
+  z-index: 1;
+  animation: grow 0.6s;
+}
+.card .bio {
+  position: relative;
+  margin: 20px;
+  font-family: Merriweather Sans;
+  animation: slidein 1.2s;
+}
+
+@keyframes fadein {
+  from {
+    color: transparent;
+  }
+  to {
+    color: inherit;
+  }
+}
+@keyframes grow {
+  from {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+  49.9% {
+    opacity: 0;
+  }
+  50% {
+    left: -240px;
+  }
+  to {
+    left: 0;
+  }
+}
+.comment {
+  font-family: Merriweather Sans;
+  font-size: 12px;
+  color: #ddd;
+  text-align: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/* Container styles */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Lato';
+}
+
+.container {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  color: #999;
+  font-size: 20px;
+  text-align: center;
+}
+
+.chart figcaption {
+  padding: 50px 25px;
+  width: 100px;
+  height: 50px;
+  border: 20px solid #f0f0f0;
+  border-radius: 100px;
+  line-height: 50px;
+}
+
+.chart img {
+  position: absolute;
+  max-width: 100px;
+  max-height: 100px;
+  background: white;
+}
+/* END Container styles */
+
+/* Colors for the circles and positions for the graphics */
+.html {
+  top: 50px;
+  left: 45px;
+}
+
+.html + svg .outer {
+  stroke: #e34f26;
+}
+
+.css {
+  top: 55px;
+  left: 48px;
+}
+
+.css + svg .outer {
+  stroke: #0d84ce;
+}
+
+.javascript {
+  max-width: 90px;
+  max-height: 90px;
+  top: 45px;
+  left: 45px;
+}
+
+.javascript + svg .outer {
+  stroke: #f0e040;
+}
+
+.node {
+  width: 200px;
+  height: 200px;
+  top: 45px;
+  left: 45px;
+}
+
+.node + svg .outer {
+  stroke: #83cd29;
+}
+
+.chart svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.outer {
+  fill: transparent;
+  stroke: #333;
+  stroke-width: 20;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  
+  /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+.chart:hover .outer {
+  stroke-dashoffset: 534 !important;
+  -webkit-animation-play-state: paused;
+}
+/* END Circle colors and graphic positions */
+
+
+/* Set the initial values for the animation */
+.chart[data-percent='100'] .outer {
+  stroke-dashoffset: 0;
+  -webkit-animation: show100 2s;
+  animation: show100 2s;
+}
+
+.chart[data-percent='75'] .outer {
+  stroke-dashoffset: 133;
+  -webkit-animation: show75 2s;
+  animation: show75 2s;
+}
+
+.chart[data-percent='50'] .outer {
+  stroke-dashoffset: 267;
+  -webkit-animation: show50 2s;
+  animation: show50 2s;
+}
+
+.chart[data-percent='25'] .outer {
+  stroke-dashoffset: 401;
+  -webkit-animation: show25 2s;
+  animation: show25 2s;
+}
+/* END set initial animation values */
+
+/* Keyframes for the initial animation */
+@-webkit-keyframes show100 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes show100 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 134;
+  }
+}
+
+@keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 124;
+  }
+}
+
+@-webkit-keyframes show50 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 267;
+  }
+}
+
+@keyframes show50 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 267;
+  }
+}
+
+@-webkit-keyframes show25 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 401;
+  }
+}
+
+@keyframes show25 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 401;
+  }
+}
+
+ul {
+    list-style-type: none;
+}
+a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.container-row {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    
+}
+
+header h4 {
+    margin: 0;
+    color: white;
+    
+}
+.wallpaper {
+    background-image: url("assets/images/m3xyvlglCxBn.jpg");
+    height: 100vh;
+    background-size: cover;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5), inset 2px 2px 3px rgba(0,0,0,0.5);
+    align-items: center;
+}
+
+.name {
+    align-items: center;
+    justify-content: center;
+}
+#header {
+    justify-content: space-around;
+    background-image: url("assets/images/m3xyvlglCxBn.jpg");
+    background-size: cover;
+    background-position-y: bottom;
+    height: 100px;
+
+    /*border: 2px solid white;*/
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5), inset 2px 2px 3px rgba(0,0,0,0.5);
+    width: 98vw;
+}
+.navbar {
+    justify-content: center;
+}
+.carousel-inner {
+    height: 640px;
+}

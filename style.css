@@ -1,0 +1,19 @@
+.container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+};
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+};
+
+header {
+    
+    
+};
+
+#header {
+    background-image: url("assets/images/z0lxQd5cb3.jpg");
+};
