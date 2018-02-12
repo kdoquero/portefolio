@@ -344,7 +344,7 @@ header h4 {
     background-image: url("assets/images/m3xyvlglCxBn.jpg");
     background-size: cover;
     background-position-y: bottom;
-    height: 100px;
+    height: 160px;
 
     /*border: 2px solid white;*/
     border-radius: 10px;
@@ -360,4 +360,10 @@ header h4 {
 
 #project {
   display: none;
+}
+
+.section-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
