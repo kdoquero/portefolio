@@ -17,6 +17,43 @@ body {
   overflow: hidden;
   box-shadow: 5px 5px 0 0 #aaa;
 }
+
+.card-presentation {
+  height: 450px;
+  width: 600px;
+  margin: 10px 10px 0 10px;
+  background-color: #F7F7E9;
+  color: #444;
+  overflow: hidden;
+  box-shadow: 5px 5px 0 0 #aaa;
+}
+
+.card-presentation h1 {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  font-family: Roboto Slab;
+  font-weight: 400;
+  background-color: #4DD65F;
+  animation: fadein 1.2s;
+}
+
+.card-presentation img {
+  float: left;
+  width: 169px;
+  height: 169px;
+  margin: 20px;
+  position: relative;
+  z-index: 1;
+  animation: grow 0.6s;
+}
+.card-presentation .bio {
+  position: relative;
+  margin: 20px;
+  font-family: Merriweather Sans;
+  animation: slidein 1.2s;
+}
+
 .card h1 {
   margin: 0;
   padding: 20px;
@@ -26,6 +63,7 @@ body {
   background-color: #4DD65F;
   animation: fadein 1.2s;
 }
+
 .card img {
   float: left;
   width: 300px;
@@ -328,6 +366,7 @@ header h4 {
     height: 2000px;
     background: url("assets/images/m3xyvlglCxBn.jpg") top center no-repeat fixed;
     height: 100vh;
+    width: 100vw;
     background-size: cover;
     border: 2px solid white;
     border-radius: 10px;
@@ -341,15 +380,16 @@ header h4 {
 }
 #header {
     justify-content: space-around;
+    align-items: center;
     background-image: url("assets/images/m3xyvlglCxBn.jpg");
     background-size: cover;
     background-position-y: bottom;
     height: 160px;
 
-    /*border: 2px solid white;*/
+    border: 2px solid white;
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0,0,0,0.5), inset 2px 2px 3px rgba(0,0,0,0.5);
-    width: 98vw;
+    width: 100vw;
 }
 .navbar {
     justify-content: center;
