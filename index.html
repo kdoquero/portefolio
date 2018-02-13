@@ -9,85 +9,76 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <header id="header" class="container-row">      
+        <div>
+            <ul>
+                <li><a href="https://github.com/kdoquero">GitHub</a></li>
+                <li><a href="http://">Linkedin</a></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="container-column name">
+            <h1> Kévin DOQUERO</h1>
+            <h4>Web Developper Junior</h4>
+            <img src="" alt="">
+        </div>
+    </header>
     <div class="wallpaper container-column">
-        <header id="header" class="container-row">      
-            <div>
-                <ul>
-                    <li><a href="https://github.com/kdoquero">GitHub</a></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <div class="container-column name">
-                <h1> Kévin DOQUERO</h1>
-                <h4>Web Developper Junior</h4>
-                <img src="" alt="">
-            </div>
-        </header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">Navbar</a>
-          
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link home" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link project" href="#">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-              </ul>
+        <nav class="navig">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Projects</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Competences</a>
             </div>
         </nav>
-        <section id="presentation">
-            <div class='card' >
-                <h1>
-                    Presentation
-                </h1>
-                <img src="assets/images/Chosen_undead_hd.png">
-                <p class='bio'>
-                Apprenant Développeur à la recherche d'un Contrat Pro de 6 Mois.
-                    
-                </p>
+        <div class="tab-content container-row" id="nav-tabContent">
+            <div class="tab-pane fade show active container-row" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class='card' >
+                    <h1>
+                        Presentation
+                    </h1>
+                    <img src="assets/images/Chosen_undead_hd.png">
+                    <p class='bio'>
+                    Apprenant Développeur à la recherche d'un Contrat Pro de 6 Mois.
+                        
+                    </p>
                 </div>
             </div>
-        </section>
+            <div class="tab-pane fade container-row" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class='card'>
+                    <h1>
+                        CRTL+C un site.
+                    </h1>
+                    <a href="https://www.simplonlyon.fr/promo5/kdoquero/1er-projet/www/index.html"><img src="assets/images/miniature1project.png"></a>
+                    
+                    <p class='bio'>
+                        Le but du projet était de nous entrainer à reproduire un site du mieux qu'on pouvais, sans forcement recopier leurs méthodes.
+                        
+                    </p>
+                </div>
+                <div class='card'>
+                    <h1>
+                        Un simple Jeu Javascript
+                    </h1>
+                    <a href="https://www.simplonlyon.fr/promo5/kdoquero/Game-FFVII-combat/www/game.html"><img src="assets/images/miniature1game.png"></a>
+                    <p class='bio'>
+                        Le but du projet était de prendre ce qu'on à appris en Javacript et de créer un petit jeu en essayant de respecter la méthode MVC.
+                    </p>
+                </div>
+                <div class='card'>
+                    <h1>
+                        A Simple PHP blog
+                    </h1>
+                    <img>
+                    <p class='bio'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sit eligendi animi porro beatae consequuntur saepe accusamus, mollitia voluptatem illum nemo harum natus laudantium recusandae vel molestias deleniti numquam illo.
+                    </p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+        </div>
         <section id="project">
-            <div class='card'>
-                <h1>
-                    CRTL+C un site.
-                </h1>
-                <a href="https://www.simplonlyon.fr/promo5/kdoquero/1er-projet/www/index.html"><img src="assets/images/miniature1project.png"></a>
-                
-                <p class='bio'>
-                    Le but du projet était de nous entrainer à reproduire un site du mieux qu'on pouvais, sans forcement recopier leurs méthodes.
-                    
-                </p>
-                </div>
-            </div>
-            <div class='card'>
-                <h1>
-                    Un simple Jeu Javascript
-                </h1>
-                <a href="https://www.simplonlyon.fr/promo5/kdoquero/Game-FFVII-combat/www/game.html"><img src="assets/images/miniature1game.png"></a>
-                <p class='bio'>
-                    Le but du projet était de prendre ce qu'on à appris en Javacript et de créer un petit jeu en essayant de respecter la méthode MVC.
-                </p>
-            </div>
-            <div class='card'>
-                <h1>
-                    A Simple PHP blog
-                </h1>
-                <img>
-                <p class='bio'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sit eligendi animi porro beatae consequuntur saepe accusamus, mollitia voluptatem illum nemo harum natus laudantium recusandae vel molestias deleniti numquam illo.
-                </p>
-            </div>
+            
                       
             
 
