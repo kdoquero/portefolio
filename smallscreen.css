@@ -1,0 +1,10 @@
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    img {
+        display: none;
+    }
+
+    .card-presentation {
+        height: 92%;
+        width: 65%;
+    }
+  }
